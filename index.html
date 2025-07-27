@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .calculator {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 15px;
+      background: linear-gradient(to right, #dfe9f3, #ffffff);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .calculator input[type="text"] {
+      height: 60px;
+      font-size: 24px;
+      text-align: right;
+    }
+    .calculator button {
+      width: 100%;
+      height: 60px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="calculator p-3">
+  <input type="text" id="result" class="form-control mb-3" placeholder="0" readonly>
+
+  <div class="row g-2">
+    <div onclick="allclear()" class="col-3"><button class="btn btn-danger">AC</button></div>
+    <div onclick="back()" class="col-3"><button class="btn btn-danger">C</button></div>
+    <div onclick="display('/')" class="col-3"><button class="btn btn-warning">/</button></div>
+    <div onclick="display('*')" class="col-3"><button class="btn btn-warning">*</button></div>
+
+    <div onclick="display('7')" class="col-3"><button class="btn btn-light">7</button></div>
+    <div onclick="display('8')" class="col-3"><button class="btn btn-light">8</button></div>
+    <div onclick="display('9')" class="col-3"><button class="btn btn-light">9</button></div>
+    <div onclick="display('-')" class="col-3"><button class="btn btn-warning">-</button></div>
+
+    <div onclick="display('4')" class="col-3"><button class="btn btn-light">4</button></div>
+    <div onclick="display('5')" class="col-3"><button class="btn btn-light">5</button></div>
+    <div onclick="display('6')" class="col-3"><button class="btn btn-light">6</button></div>
+    <div onclick="display('+')" class="col-3"><button class="btn btn-warning">+</button></div>
+
+    <div onclick="display('1')" class="col-3"><button class="btn btn-light">1</button></div>
+    <div onclick="display('2')" class="col-3"><button class="btn btn-light">2</button></div>
+    <div onclick="display('3')" class="col-3"><button class="btn btn-light">3</button></div>
+    <div onclick="equalto()" class="col-3"><button class="btn btn-success">=</button></div>
+
+    <div onclick="display('0')" class="col-6"><button class="btn btn-light">0</button></div>
+    <div onclick="display('.')" class="col-6"><button class="btn btn-light">.</button></div>
+  </div>
+</div>
+
+</body>
+
+<script src="script.js"></script>
+</html>
