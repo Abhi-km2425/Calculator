@@ -1,3 +1,4 @@
+const result = document.getElementById("result");
 
 function display(num){
     result.value+=num
